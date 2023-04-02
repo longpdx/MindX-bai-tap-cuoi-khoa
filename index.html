@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>44iPA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaQueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container-box">
+<!-- Top bar -->
+  <div id="top" class="top-bar">
+    <h2 class="intro">Interactive Phonemic Chart</h2>
+    <p>Login</p>
+  </div>
+<!-- Top bar End -->
+
+<!-- Navbar -->
+  <div class="navbar">
+    <div>
+      <h1>44 IPA sounds</h1>
+    </div>
+
+    <div class="dictionary">
+      <form action="">
+        <div class="input-box">
+          <input type="text" placeholder="Dictionary">
+        </div>
+        <div>
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </form>
+    </div>
+
+    <div class="menu">
+      <ul class="nav-menu">
+        <li>
+          <a onclick="closeMenu()" href="#vowels" class="nav-link">Vowels</a>
+        </li>
+        <li>
+          <a onclick="closeMenu()" href="#consonants" class="nav-link">Consonants</a>
+        </li>
+        <li>
+          <a onclick="closeMenu()" href="#dictionary" class="nav-link">Dictionary</a>
+        </li>
+      </ul>
+      <div onclick="mobileMenu()" class="nav-burgur-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Animation -->
+  <section>
+    <div class="wave" id="wave1" style="--i:1;"></div>
+    <div class="wave" id="wave2" style="--i:2;"></div>
+    <div class="wave" id="wave3" style="--i:3;"></div>
+    <div class="wave" id="wave4" style="--i:4;"></div>
+  </section>
+  <!-- Animation End -->
+
+
+  <!-- Icon bar -->
+  <div class="icon-bar">
+    <div>
+      <img src="./cards/short.png" alt="short">
+      <p>short</p>
+    </div>
+    <div>
+      <img src="./cards/long.png" alt="long">
+      <p>long</p>
+    </div>
+    <div>
+      <img src="./cards/dipthongs.png" alt="dipthongs">
+      <p>dipthongs</p>
+    </div>
+    <div>
+      <img src="./cards/voiced.png" alt="voiced">
+      <p>voiced</p>
+    </div>
+    <div>
+      <img src="./cards/unvoiced.png" alt="unvoiced">
+      <p>unvoiced</p>
+    </div>
+  </div>
+  <!-- Icon bar End -->
+  
+  <!-- Listing 44 grid -->
+  <!-- Vowels 24 -->
+  <div id="vowels" class="vowels">
+    <div class="title">
+      <h2>Vowels</h2>
+    </div>
+    <div class="listings">
+      <div class="card">
+        <img src="./cards/1.png" alt="sheep">
+      </div>
+      <div class="card">
+        <img src="./cards/2.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/3.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/4.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/5.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/6.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/7.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/8.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/9.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/10.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/11.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/12.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/13.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/14.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/15.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/16.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/17.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/18.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/19.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/20.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/21.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/22.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/23.png" alt="ship">
+      </div>
+      <div class="card">
+        <img src="./cards/24.png" alt="ship">
+      </div>
+    </div>
+     <!-- Vowels 24 End-->
+</div>
+
+<!-- Consonants 24 -->
+<div id="consonants" class="consonants">
+  <div class="title">
+    <h2>Consonants</h2>
+  </div>
+  <div class="listings">
+    <div class="card">
+      <img src="./cards/25.png" alt="sheep">
+    </div>
+    <div class="card">
+      <img src="./cards/26.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/27.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/28.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/29.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/30.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/31.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/32.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/33.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/34.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/35.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/36.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/37.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/38.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/39.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/40.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/41.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/42.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/43.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/44.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/45.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/46.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/47.png" alt="ship">
+    </div>
+    <div class="card">
+      <img src="./cards/48.png" alt="ship">
+    </div>
+  </div>
+   <!-- Consonants 24 End-->
+</div>
+  <!-- Listing 44 grid End -->
+  
+<!-- Scroll to Top Button -->
+<div class="scroll-btn">
+  <a href="#top">
+    <i class="fa-solid fa-circle-chevron-up"></i>
+  </a>
+</div>
+<!-- Scroll to Top Button End -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <ul class="left-menu">
+      <li>Home</li>
+      <li>Privacy</li>
+      <li>Terms</li>
+    </ul>
+    <ul class="right-menu">
+      <li>Support</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <!-- Footer End -->
+  
+  
+</div>
+<script>
+  //Animation
+  let wave1 = document.getElementById('wave1');
+  let wave2 = document.getElementById('wave2');
+  let wave3 = document.getElementById('wave3');
+  let wave4 = document.getElementById('wave4');
+
+  window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+
+    wave1.style.backgroundPositionX = 300 + value + 4 + 'px';
+    wave2.style.backgroundPositionX = 200 + value + -4 + 'px';
+    wave3.style.backgroundPositionX = 100 + value + 2 + 'px';
+    wave4.style.backgroundPositionX = 400 + value + -2 + 'px';
+  }
+  )
+  // Animation End  
+  let menuBtn = document.querySelector('.nav-burgur-btn');
+  let navMenu = document.querySelector('.nav-menu');
+
+  let mobileMenu = () => {
+    menuBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  };
+
+  let closeMenu = () => {
+    navMenu.classList.toggle('active');
+  };
+</script>
+
+</body>
+</html>
