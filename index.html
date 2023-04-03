@@ -97,37 +97,37 @@
     </div>
     <div class="listings">
       <div class="card">
-        <img src="./cards/1.png" alt="sheep">
+        <img onclick="open_popup(0)" src="./cards/1.png" alt="sheep">
       </div>
       <div class="card">
-        <img src="./cards/2.png" alt="ship">
+        <img onclick="open_popup(1)" src="./cards/2.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/3.png" alt="ship">
+        <img onclick="open_popup(2)" src="./cards/3.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/4.png" alt="ship">
+        <img onclick="open_popup(3)" src="./cards/4.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/5.png" alt="ship">
+        <img onclick="open_popup(4)" src="./cards/5.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/6.png" alt="ship">
+        <img onclick="open_popup(5)" src="./cards/6.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/7.png" alt="ship">
+        <img onclick="open_popup(6)" src="./cards/7.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/8.png" alt="ship">
+        <img onclick="open_popup(7)" src="./cards/8.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/9.png" alt="ship">
+        <img onclick="open_popup(8)" src="./cards/9.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/10.png" alt="ship">
+        <img onclick="open_popup(9)" src="./cards/10.png" alt="ship">
       </div>
       <div class="card">
-        <img src="./cards/11.png" alt="ship">
+        <img onclick="open_popup(10)" src="./cards/11.png" alt="ship">
       </div>
       <div class="card">
         <img src="./cards/12.png" alt="ship">
@@ -277,37 +277,22 @@
   </div>
   <!-- Footer End -->
   
+  <!-- Video popup -->
+  <div class="modal-popup" id="modal-popup">
+    <div class="closebtn">
+      <i onclick="closepopup()" class="fa-sharp fa-solid fa-circle-xmark"></i>
+    </div>
+    <div class="modal-popup-content">
+      <video autoplay controls id="videoid" src=""></video>
+    </div>
+  </div>
+  <!-- Video popup End -->
   
 </div>
-<script>
-  //Animation
-  let wave1 = document.getElementById('wave1');
-  let wave2 = document.getElementById('wave2');
-  let wave3 = document.getElementById('wave3');
-  let wave4 = document.getElementById('wave4');
 
-  window.addEventListener('scroll', function(){
-    let value = window.scrollY;
-
-    wave1.style.backgroundPositionX = 300 + value + 4 + 'px';
-    wave2.style.backgroundPositionX = 200 + value + -4 + 'px';
-    wave3.style.backgroundPositionX = 100 + value + 2 + 'px';
-    wave4.style.backgroundPositionX = 400 + value + -2 + 'px';
-  }
-  )
-  // Animation End  
-  let menuBtn = document.querySelector('.nav-burgur-btn');
-  let navMenu = document.querySelector('.nav-menu');
-
-  let mobileMenu = () => {
-    menuBtn.classList.toggle('active');
-    navMenu.classList.toggle('active');
-  };
-
-  let closeMenu = () => {
-    navMenu.classList.toggle('active');
-  };
-</script>
+<script src="./popup-video.js"></script>
+<script src="./animation.js"></script>
+<script src="./menu.js"></script>
 
 </body>
 </html>

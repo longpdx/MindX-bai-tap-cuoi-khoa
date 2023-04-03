@@ -1,0 +1,16 @@
+  //Animation
+  const wave1 = document.getElementById('wave1');
+  const wave2 = document.getElementById('wave2');
+  const wave3 = document.getElementById('wave3');
+  const wave4 = document.getElementById('wave4');
+
+  window.addEventListener('scroll', function(){
+    const value = window.scrollY;
+
+    wave1.style.backgroundPositionX = 300 + value + 4 + 'px';
+    wave2.style.backgroundPositionX = 200 + value + -4 + 'px';
+    wave3.style.backgroundPositionX = 100 + value + 2 + 'px';
+    wave4.style.backgroundPositionX = 400 + value + -2 + 'px';
+  }
+  )
+  // Animation End  

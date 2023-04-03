@@ -242,7 +242,7 @@ padding-right: 1rem;
 section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background: #3586ff;
 }
 
@@ -290,3 +290,38 @@ section {
   }
 }
 /* Animation End */
+
+/* Popup video */
+.modal-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-popup-content {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  top: 50%;
+  background: white;
+  transform: translate(-50%,-50%);
+}
+
+.modal-popup-content video{
+  width: 100%;
+}
+
+.closebtn {
+ position: absolute; 
+ right: 20px;
+ top: 20px;
+}
+
+.closebtn i{
+  font-size: 40px;
+  color: white;
+}
+/* Popup video End */
