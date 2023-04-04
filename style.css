@@ -240,10 +240,35 @@ padding-right: 1rem;
 /* Footer End */
 
 /* Animation */
-section {
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: #cad9f0;
+}
+
+.parallax img {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 50%;
+  pointer-events: none;
+}
+
+#text {
+  position: absolute;
+  top: 10%;
+  font-size: 5rem;
+  color: #112434;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.wave-animation{
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 7vh;
   background: #3586ff;
 }
 
@@ -255,7 +280,7 @@ section {
   left: 0;
   background: url(./animate/wave.png);
   background-size: 100%;
-  animation: animate 4s ease-in-out infinite;
+  /* animation: animate 4s ease-in-out infinite; */
   animation-delay: calc(var(--i) * 0.25s);
 }
 
