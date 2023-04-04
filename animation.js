@@ -6,7 +6,7 @@
     const value = window.scrollY;
 
     text.style.marginTop = value * 1.5 + 'px';
-    ship.style.left = value * 1.5 + 'px';
+    ship.style.left = value * .55 + 'px';
   });
   // Animation Text + Ship End
   
