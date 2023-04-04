@@ -132,6 +132,8 @@ img {
   justify-content: space-between;
   padding: 1rem 0;
   color: #5e5e5e;
+  background: white;
+
 }
 .icon-bar img {
   max-width: 60%;
@@ -155,6 +157,7 @@ img {
 .vowels {
   width: 100%;
   padding: 2rem 0;
+  background: white;
 }
 
 .vowels .title {
@@ -188,9 +191,15 @@ img {
   /* object-fit: cover; */
 }
 
+.listings .card img:hover{
+  border-radius: 50%;
+  /* opacity: .5; */
+}
+
 .consonants {
   width: 100%;
   padding: 2rem 0;
+  background: white;
 }
 
 .consonants .title {
@@ -247,13 +256,14 @@ padding-right: 1rem;
   align-items: center;
   height: 70vh;
   background: #cad9f0;
+  z-index: -1;
 }
 
 .parallax img {
   position: absolute;
-  bottom: -15px;
+  bottom: -30px;
   left: 0;
-  width: 50%;
+  width: 30%;
   pointer-events: none;
 }
 
