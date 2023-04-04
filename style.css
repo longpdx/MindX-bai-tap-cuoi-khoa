@@ -193,6 +193,7 @@ img {
 
 .listings .card img:hover{
   border-radius: 50%;
+  /* border: 2px solid black; */
   /* opacity: .5; */
 }
 
@@ -218,6 +219,7 @@ img {
 .scroll-btn {
   display: flex;
   padding-bottom: 1rem;
+  background: white;
 }
 
 .scroll-btn a {
@@ -232,6 +234,7 @@ img {
   justify-content: space-between;
   border-top: 1px solid #eeeeee;
   padding: 1rem 0;
+  background: white;
 }
 
 .footer .left-menu, .right-menu {
