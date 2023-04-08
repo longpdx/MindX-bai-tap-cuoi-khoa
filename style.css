@@ -185,6 +185,11 @@ img {
   cursor: pointer;
 }
 
+.listings #card_ignore {
+  cursor: auto;
+  border-radius: initial;
+}
+
 .listings img {
   width: 100%;
   height: 150px;
