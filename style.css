@@ -375,4 +375,8 @@ padding-right: 1rem;
   color: white;
   cursor: pointer;
 }
+
+.closebtn i:hover {
+  color: black;
+}
 /* Popup video End */

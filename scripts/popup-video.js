@@ -11,7 +11,7 @@
 //   [10, '10.mp4'],
 // ]
 var array_item = [];
-for (var i = 1; i <= 47; i++) {
+for (var i = 1; i <= 48; i++) {
   array_item.push([i, i + '.mp4']);
 }
 
