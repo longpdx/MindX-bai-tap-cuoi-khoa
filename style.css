@@ -339,7 +339,6 @@ padding-right: 1rem;
 }
 /* Animation End */
 
-/* Popup video */
 .modal-popup {
   position: fixed;
   top: 0;
@@ -349,6 +348,7 @@ padding-right: 1rem;
   background: rgba(0,0,0,0.7);
   display: none;
   z-index: 2000;
+  transform: scale(2);
 }
 
 .modal-popup-content {

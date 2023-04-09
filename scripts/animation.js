@@ -5,7 +5,12 @@
   window.addEventListener('scroll', function(){
     const value = window.scrollY;
 
+  //Stop Text scroll over page 1000px
+  if (value > 1000) {
+    text.style.marginTop = value * 1.0 + 'px';
+  } else {
     text.style.marginTop = value * 1.5 + 'px';
+  }
     ship.style.left = value * .55 + 'px';
   });
   // Animation Text + Ship End
