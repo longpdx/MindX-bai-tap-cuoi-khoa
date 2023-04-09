@@ -111,13 +111,25 @@ img {
   justify-self: end;
 }
 
+.menu ul li a {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.menu ul li a:hover,
+.menu ul li a:active {
+  background-color: #ff385c;
+  color: #fff;
+}
+
 .nav-menu {
   display: flex;
 }
 
 .nav-menu li {
   padding-left: 1rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .nav-burgur-btn {
