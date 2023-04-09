@@ -1,306 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ship vs Sheep</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaQueries.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="./animate/sheep.png" type="image/png">
-</head>
-<body>
-<div class="container-box">
-<!-- Top bar -->
-  <div id="top" class="top-bar">
-    <h2 class="intro">Interactive Phonemic Chart</h2>
-    <p>Login</p>
-  </div>
-<!-- Top bar End -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ship vs Sheep</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./animate/sheep.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container-box">
+      <!-- Top bar -->
+      <div id="top" class="top-bar">
+        <h2 class="intro">Interactive Phonemic Chart</h2>
+        <p>Login</p>
+      </div>
+      <!-- Top bar End -->
 
-<!-- Navbar -->
-  <div class="navbar">
-    <div>
-      <h1>44 IPA sounds</h1>
-    </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <div>
+          <!-- <h1>44 IPA sounds</h1> -->
+          <img class="logo" src="./animate/ipaLogo.png" alt="logo" />
+        </div>
 
-    <div class="dictionary">
-      <form action="">
-        <div class="input-box">
-          <input type="text" placeholder="Dictionary">
+        <div class="dictionary">
+          <form action="">
+            <div class="input-box">
+              <input type="text" placeholder="Dictionary" />
+            </div>
+            <div>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+
+        <div class="menu">
+          <ul class="nav-menu">
+            <li>
+              <a onclick="closeMenu()" href="#vowels" class="nav-link"
+                >Vowels</a
+              >
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#consonants" class="nav-link"
+                >Consonants</a
+              >
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#dictionary" class="nav-link"
+                >Dictionary</a
+              >
+            </li>
+          </ul>
+          <div onclick="mobileMenu()" class="nav-burgur-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar End -->
+
+      <!-- Animation -->
+      <section class="parallax">
+        <div id="text">
+          <h1 id="text1">Ship vs Sheep</h1>
+          <h5 id="text2">/ʃ<span>&#618;</span>p/ vs /ʃip/</h5>
+        </div>
+        <img id="ship" src="./animate/sheeponship.png" alt="ship" />
+      </section>
+      <section class="wave-animation">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </section>
+      <!-- Animation End -->
+
+      <!-- Icon bar -->
+      <div class="icon-bar">
+        <div>
+          <img src="./cards/short.png" alt="short" />
+          <p>short</p>
         </div>
         <div>
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <img src="./cards/long.png" alt="long" />
+          <p>long</p>
         </div>
-      </form>
+        <div>
+          <img src="./cards/dipthongs.png" alt="dipthongs" />
+          <p>dipthongs</p>
+        </div>
+        <div>
+          <img src="./cards/voiced.png" alt="voiced" />
+          <p>voiced</p>
+        </div>
+        <div>
+          <img src="./cards/unvoiced.png" alt="unvoiced" />
+          <p>unvoiced</p>
+        </div>
+      </div>
+      <!-- Icon bar End -->
+
+      <!-- Listing 44 grid -->
+      <!-- Vowels 24 -->
+      <div id="vowels" class="vowels">
+        <div class="title">
+          <h2>Vowels</h2>
+        </div>
+        <div class="listings">
+          <div class="card">
+            <img onclick="open_popup(0)" src="./cards/1.png" alt="sheep" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(1)" src="./cards/2.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(2)" src="./cards/3.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(3)" src="./cards/4.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(4)" src="./cards/5.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(5)" src="./cards/6.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img id="card_ignore" src="./cards/7.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img id="card_ignore" src="./cards/8.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(8)" src="./cards/9.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(9)" src="./cards/10.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(10)" src="./cards/11.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(11)" src="./cards/12.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(12)" src="./cards/13.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(13)" src="./cards/14.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(14)" src="./cards/15.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img id="card_ignore" src="./cards/16.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(16)" src="./cards/17.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(17)" src="./cards/18.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(18)" src="./cards/19.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(19)" src="./cards/20.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(20)" src="./cards/21.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(21)" src="./cards/22.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(22)" src="./cards/23.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img id="card_ignore" src="./cards/24.png" alt="ship" />
+          </div>
+        </div>
+        <!-- Vowels 24 End-->
+      </div>
+
+      <!-- Consonants 24 -->
+      <div id="consonants" class="consonants">
+        <div class="title">
+          <h2>Consonants</h2>
+        </div>
+        <div class="listings">
+          <div class="card">
+            <img onclick="open_popup(24)" src="./cards/25.png" alt="sheep" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(25)" src="./cards/26.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(26)" src="./cards/27.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(27)" src="./cards/28.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(28)" src="./cards/29.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(29)" src="./cards/30.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(30)" src="./cards/31.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(31)" src="./cards/32.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(32)" src="./cards/33.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(33)" src="./cards/34.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(34)" src="./cards/35.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(35)" src="./cards/36.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(36)" src="./cards/37.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(37)" src="./cards/38.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(38)" src="./cards/39.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(39)" src="./cards/40.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(40)" src="./cards/41.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(41)" src="./cards/42.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(42)" src="./cards/43.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(43)" src="./cards/44.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(44)" src="./cards/45.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(45)" src="./cards/46.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(46)" src="./cards/47.png" alt="ship" />
+          </div>
+          <div class="card">
+            <img onclick="open_popup(47)" src="./cards/48.png" alt="ship" />
+          </div>
+        </div>
+        <!-- Consonants 24 End-->
+      </div>
+      <!-- Listing 44 grid End -->
+
+      <!-- Scroll to Top Button -->
+      <div class="scroll-btn">
+        <a href="#top">
+          <i class="fa-solid fa-circle-chevron-up"></i>
+        </a>
+      </div>
+      <!-- Scroll to Top Button End -->
+
+      <!-- Footer -->
+      <div class="footer">
+        <ul class="left-menu">
+          <li>Home</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+        </ul>
+        <ul class="right-menu">
+          <li>Support</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Video popup -->
+      <div onclick="closepopup()" class="modal-popup" id="modal-popup">
+        <div class="closebtn">
+          <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="modal-popup-content">
+          <video autoplay controls id="videoid" src=""></video>
+        </div>
+      </div>
+      <!-- Video popup End -->
     </div>
 
-    <div class="menu">
-      <ul class="nav-menu">
-        <li>
-          <a onclick="closeMenu()" href="#vowels" class="nav-link">Vowels</a>
-        </li>
-        <li>
-          <a onclick="closeMenu()" href="#consonants" class="nav-link">Consonants</a>
-        </li>
-        <li>
-          <a onclick="closeMenu()" href="#dictionary" class="nav-link">Dictionary</a>
-        </li>
-      </ul>
-      <div onclick="mobileMenu()" class="nav-burgur-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-  </div>
-  <!-- Navbar End -->
-
-  <!-- Animation -->
-  <section class="parallax">
-    <div id="text">
-    <h1 id="text1">Ship vs Sheep</h1>
-    <h5 id="text2">/ʃ<span>&#618;</span>p/ vs /ʃip/</h5>
-    </div>
-    <img id="ship" src="./animate/sheeponship.png" alt="ship">
-  </section>
-  <section class="wave-animation">
-    <div class="wave" id="wave1" ></div>
-    <div class="wave" id="wave2" ></div>
-    <div class="wave" id="wave3" ></div>
-    <div class="wave" id="wave4" ></div>
-  </section>
-  <!-- Animation End -->
-
-
-  <!-- Icon bar -->
-  <div class="icon-bar">
-    <div>
-      <img src="./cards/short.png" alt="short">
-      <p>short</p>
-    </div>
-    <div>
-      <img src="./cards/long.png" alt="long">
-      <p>long</p>
-    </div>
-    <div>
-      <img src="./cards/dipthongs.png" alt="dipthongs">
-      <p>dipthongs</p>
-    </div>
-    <div>
-      <img src="./cards/voiced.png" alt="voiced">
-      <p>voiced</p>
-    </div>
-    <div>
-      <img src="./cards/unvoiced.png" alt="unvoiced">
-      <p>unvoiced</p>
-    </div>
-  </div>
-  <!-- Icon bar End -->
-  
-  <!-- Listing 44 grid -->
-  <!-- Vowels 24 -->
-  <div id="vowels" class="vowels">
-    <div class="title">
-      <h2>Vowels</h2>
-    </div>
-    <div class="listings">
-      <div class="card">
-        <img onclick="open_popup(0)" src="./cards/1.png" alt="sheep">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(1)" src="./cards/2.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(2)" src="./cards/3.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(3)" src="./cards/4.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(4)" src="./cards/5.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(5)" src="./cards/6.png" alt="ship">
-      </div>
-      <div class="card">
-        <img id="card_ignore" src="./cards/7.png" alt="ship"> 
-      </div>
-      <div class="card">
-        <img id="card_ignore" src="./cards/8.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(8)" src="./cards/9.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(9)" src="./cards/10.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(10)" src="./cards/11.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(11)" src="./cards/12.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(12)" src="./cards/13.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(13)" src="./cards/14.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(14)" src="./cards/15.png" alt="ship">
-      </div>
-      <div class="card">
-        <img id="card_ignore" src="./cards/16.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(16)" src="./cards/17.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(17)" src="./cards/18.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(18)" src="./cards/19.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(19)" src="./cards/20.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(20)" src="./cards/21.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(21)" src="./cards/22.png" alt="ship">
-      </div>
-      <div class="card">
-        <img onclick="open_popup(22)" src="./cards/23.png" alt="ship">
-      </div>
-      <div class="card">
-        <img id="card_ignore" src="./cards/24.png" alt="ship">
-      </div>
-    </div>
-     <!-- Vowels 24 End-->
-</div>
-
-<!-- Consonants 24 -->
-<div id="consonants" class="consonants">
-  <div class="title">
-    <h2>Consonants</h2>
-  </div>
-  <div class="listings">
-    <div class="card">
-      <img onclick="open_popup(24)" src="./cards/25.png" alt="sheep">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(25)" src="./cards/26.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(26)" src="./cards/27.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(27)" src="./cards/28.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(28)" src="./cards/29.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(29)" src="./cards/30.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(30)" src="./cards/31.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(31)" src="./cards/32.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(32)" src="./cards/33.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(33)" src="./cards/34.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(34)" src="./cards/35.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(35)" src="./cards/36.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(36)" src="./cards/37.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(37)" src="./cards/38.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(38)" src="./cards/39.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(39)" src="./cards/40.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(40)" src="./cards/41.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(41)" src="./cards/42.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(42)" src="./cards/43.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(43)" src="./cards/44.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(44)" src="./cards/45.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(45)" src="./cards/46.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(46)" src="./cards/47.png" alt="ship">
-    </div>
-    <div class="card">
-      <img onclick="open_popup(47)" src="./cards/48.png" alt="ship">
-    </div>
-  </div>
-   <!-- Consonants 24 End-->
-</div>
-  <!-- Listing 44 grid End -->
-  
-<!-- Scroll to Top Button -->
-<div class="scroll-btn">
-  <a href="#top">
-    <i class="fa-solid fa-circle-chevron-up"></i>
-  </a>
-</div>
-<!-- Scroll to Top Button End -->
-
-  <!-- Footer -->
-  <div class="footer">
-    <ul class="left-menu">
-      <li>Home</li>
-      <li>Privacy</li>
-      <li>Terms</li>
-    </ul>
-    <ul class="right-menu">
-      <li>Support</li>
-      <li>Contact</li>
-    </ul>
-  </div>
-  <!-- Footer End -->
-  
-  <!-- Video popup -->
-  <div onclick="closepopup()" class="modal-popup" id="modal-popup">
-    <div class="closebtn">
-      <i class="fa-sharp fa-solid fa-circle-xmark"></i>
-    </div>
-    <div class="modal-popup-content">
-      <video autoplay controls id="videoid" src=""></video>
-    </div>
-  </div>
-  <!-- Video popup End -->
-  
-</div>
-
-<script src="./scripts/popup-video.js"></script>
-<script src="./scripts/animation.js"></script>
-<script src="./scripts/menu.js"></script>
-
-</body>
+    <script src="./scripts/popup-video.js"></script>
+    <script src="./scripts/animation.js"></script>
+    <script src="./scripts/menu.js"></script>
+  </body>
 </html>

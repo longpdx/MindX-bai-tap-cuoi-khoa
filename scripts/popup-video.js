@@ -12,23 +12,23 @@
 // ]
 var array_item = [];
 for (var i = 1; i <= 48; i++) {
-  array_item.push([i, i + '.mp4']);
+  array_item.push([i, i + ".mp4"]);
 }
 
-  function open_popup(value){
-    document.getElementById('modal-popup').style.display='block';
-    document.getElementById('videoid').src = 'videos/' + array_item[value][1]
-  }
+function open_popup(value) {
+  document.getElementById("modal-popup").style.display = "block";
+  document.getElementById("videoid").src = "videos/" + array_item[value][1];
+}
 
-  var video = document.getElementById("videoid");
-  function closepopup(){
-    document.getElementById('modal-popup').style.display='none';
-    video.pause();
+var video = document.getElementById("videoid");
+function closepopup() {
+  document.getElementById("modal-popup").style.display = "none";
+  video.pause();
+}
+
+var modal = document.getElementById("modal-popup");
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-  
-  var modal = document.getElementById('modal-popup');
-  window.onclick = function(event){
-      if(event.target==modal){
-          modal.style.display='none';
-      }
-  }
+};
