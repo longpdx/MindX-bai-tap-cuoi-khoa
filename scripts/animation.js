@@ -5,7 +5,7 @@
   window.addEventListener('scroll', function(){
     const value = window.scrollY;
 
-  //Stop Text scroll over page 1000px
+  //Fix Stop Text scroll over page 1000px
   if (value > 1000) {
     text.style.marginTop = value * 1.0 + 'px';
   } else {
@@ -24,9 +24,9 @@
   window.addEventListener('scroll', function(){
     const value = window.scrollY;
 
-    wave1.style.backgroundPositionX = 300 + value + 4 + 'px';
-    wave2.style.backgroundPositionX = 200 + value + -4 + 'px';
-    wave3.style.backgroundPositionX = 100 + value + 2 + 'px';
-    wave4.style.backgroundPositionX = 400 + value + -2 + 'px';
+    wave1.style.backgroundPositionX = 300 + value + 'px';
+    wave2.style.backgroundPositionX = 200 + value + 'px';
+    wave3.style.backgroundPositionX = 100 + value + 'px';
+    wave4.style.backgroundPositionX = 400 + value + 'px';
   });
   // Animation Wave End  
