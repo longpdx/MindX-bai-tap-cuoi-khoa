@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
   } else {
     text.style.marginTop = value * 1.5 + "px";
   }
-  ship.style.left = value * 0.55 + "px";
+  ship.style.left = value * 0.5 + "px";
 });
 // Animation Text + Ship End
 

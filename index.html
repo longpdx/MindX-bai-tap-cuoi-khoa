@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ship vs Sheep</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dictionary.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
     <link
       rel="stylesheet"
@@ -21,11 +22,11 @@
       <!-- Top bar -->
       <div id="top" class="top-bar">
         <h2 class="intro">Interactive Phonemic Chart</h2>
-        <p>Night Mode</p>
-        <!-- <button id="toggle-btn">Toggle Dark/Light Mode</button> -->
+        <div id="toggle">
+          <i id="theme-button" class="fa-solid fa-toggle-off"></i>
+        </div>
       </div>
       <!-- Top bar End -->
-
       <!-- Navbar -->
       <div class="navbar">
         <div>
@@ -33,7 +34,7 @@
           <img class="logo" src="./animate/ipaLogo.png" alt="logo" />
         </div>
 
-        <div class="dictionary">
+        <!-- <div class="dictionary">
           <form action="">
             <div class="input-box">
               <input type="text" placeholder="Dictionary" />
@@ -42,7 +43,7 @@
               <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
           </form>
-        </div>
+        </div> -->
 
         <div class="menu">
           <ul class="nav-menu">
@@ -84,6 +85,55 @@
         <div class="wave" id="wave4"></div>
       </section>
       <!-- Animation End -->
+
+      <!-- Dictionary -->
+      <div class="wrapper" id="dictionary">
+        <h1>English Dictionary</h1>
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search a word"
+            required
+            spellcheck="false"
+          />
+          <i class="fas fa-search"></i>
+          <span class="material-icons">Remove</span>
+        </div>
+        <p class="info-text">
+          Type any existing word and press enter to get meaning, example,
+          synonyms, etc.
+        </p>
+        <ul>
+          <li class="word">
+            <div class="details">
+              <p>__</p>
+              <span>_ _</span>
+            </div>
+            <i class="fas fa-volume-up"></i>
+          </li>
+          <div class="content">
+            <li class="meaning">
+              <div class="details">
+                <p>Meaning</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="example">
+              <div class="details">
+                <p>Example</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="synonyms">
+              <div class="details">
+                <p>Synonyms</p>
+                <div class="list"></div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <!-- Dictionary End -->
 
       <!-- Icon bar -->
       <div class="icon-bar">
@@ -313,6 +363,7 @@
     <script src="./scripts/popup-video.js"></script>
     <script src="./scripts/animation.js"></script>
     <script src="./scripts/menu.js"></script>
-    <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/toggle-btn.js"></script>
+    <script src="./scripts/dictionary.js"></script>
   </body>
 </html>
