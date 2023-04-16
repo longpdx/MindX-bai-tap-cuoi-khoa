@@ -10,7 +10,7 @@ toggleBtn.onclick = function(){
 const parallaxElement = document.querySelector('.parallax');
 const parallaxTextElement = document.querySelector('.parallax #text');
 const waveElement = document.querySelector('.wave-animation');
-// const vowelsElement = document.querySelector('.vowels');
+const starsElement = document.querySelector('#stars');
 // const consonantsElement = document.querySelector('.consonants');
 let isColored = false;
 let originalColor;
@@ -20,7 +20,7 @@ if (isColored) {
   parallaxElement.style.background = originalColor;
   parallaxTextElement.style.color = originalColor;
   waveElement.style.background = originalColor;
-  // vowelsElement.style.background = originalColor;
+  // starsElement.style.background= originalColor;
   // consonantsElement.style.background = originalColor;
 
   isColored = false;
@@ -28,13 +28,13 @@ if (isColored) {
   originalColor = parallaxElement.style.background;
   originalColor = parallaxTextElement.style.color;
   originalColor = waveElement.style.background;
-  // originalColor = vowelsElement.style.background;
+  // originalColor = starsElement.style.background;
   // originalColor = consonantsElement.style.background;
 
-  parallaxElement.style.background = '#2b1055'; // Thay đổi màu sắc thành màu đỏ
-  parallaxTextElement.style.color = 'white'; // Thay đổi màu sắc thành màu đỏ
-  waveElement.style.background = 'black'; // Thay đổi màu sắc thành màu đỏ
-  // vowelsElement.style.background = '#2b1055'; // Thay đổi màu sắc thành màu đỏ
+  parallaxElement.style.background = '#3c2970'; // Thay đổi màu nền thành màu tím
+  parallaxTextElement.style.color = 'white'; // Thay đổi màu Text thành màu trắng
+  waveElement.style.background = '#17041b'; // Thay đổi màu Wave thành màu đỏ
+  // starsElement.style.background; // Thay đổi màu sắc thành màu đỏ
   // consonantsElement.style.background = '#2b1055'; // Thay đổi màu sắc thành màu đỏ
   isColored = true;
 }
