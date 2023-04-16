@@ -109,11 +109,11 @@ ul li:last-child{
   padding-bottom: 0;
 }
 ul .word p{
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 500;
 }
 ul .word span{
-  font-size: 12px;
+  font-size: 20px;
   color: #989898;
 }
 ul .word i{

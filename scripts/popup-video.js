@@ -21,14 +21,18 @@ function open_popup(value) {
 }
 
 var video = document.getElementById("videoid");
-function closepopup() {
-  document.getElementById("modal-popup").style.display = "none";
-  video.pause();
-}
+video.onclick = function () {
+  if (video.played) {
+    video.stop();
+  } else {
+    video.play();
+  }
+};
 
 var modal = document.getElementById("modal-popup");
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    video.pause();
   }
 };

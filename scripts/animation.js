@@ -19,10 +19,10 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   const valueShip = window.scrollY;
 
-  if (valueShip < 1000) {
-    ship.style.left = valueShip * 0.5 + "px";
+  if (valueShip < 900) {
+    ship.style.left = valueShip * 0.35 + "px";
   } else {
-    ship.style.left = valueShip * 0.1 + "px";
+    ship.style.left = valueShip;
   }
 });
 // Animation Text + Ship End
