@@ -32,7 +32,6 @@ img {
   padding: 0 8px;
 }
 
-
 /* Navbar */
 .navbar {
   /* overflow: hidden; */
@@ -345,21 +344,6 @@ img {
   width: 100%;
 }
 
-/* .closebtn {
-  position: absolute;
-  right: 30%;
-  top: 30%;
-}
-
-.closebtn i {
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-}
-
-.closebtn i:hover {
-  color: black;
-} */
 /* Popup video End */
 
 /* Top bar */
@@ -385,7 +369,7 @@ img {
   justify-self: end;
 }
 
-#toggle i{
+#toggle i {
   font-size: 2rem;
 }
 

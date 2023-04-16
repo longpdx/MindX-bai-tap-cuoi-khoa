@@ -10,8 +10,8 @@
 //   [9, '9.mp4'],
 //   [10, '10.mp4'],
 // ]
-var array_item = [];
-for (var i = 1; i <= 48; i++) {
+let array_item = [];
+for (let i = 1; i <= 48; i++) {
   array_item.push([i, i + ".mp4"]);
 }
 
@@ -20,7 +20,7 @@ function open_popup(value) {
   document.getElementById("videoid").src = "videos/" + array_item[value][1];
 }
 
-var video = document.getElementById("videoid");
+let video = document.getElementById("videoid");
 video.onclick = function () {
   if (video.played) {
     video.stop();
@@ -29,7 +29,7 @@ video.onclick = function () {
   }
 };
 
-var modal = document.getElementById("modal-popup");
+let modal = document.getElementById("modal-popup");
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
