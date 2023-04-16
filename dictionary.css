@@ -21,10 +21,8 @@ body{
 
 .wrapper{
   width: 100%;
-  border-radius: 7px;
   background: #fff;
   padding: 25px 28px 45px;
-  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 .wrapper h1{
   font-size: 28px;

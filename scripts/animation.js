@@ -3,15 +3,27 @@ const text = document.getElementById("text");
 const ship = document.getElementById("ship");
 
 window.addEventListener("scroll", function () {
-  const value = window.scrollY;
+  const valueText = window.scrollY;
 
-  //Fix Stop Text scroll over page 1000px
-  if (value > 1000) {
-    text.style.marginTop = value * 1.0 + "px";
+  //Fix Text Stop Text scroll over page 1000px
+  if (valueText > 1000) {
+    text.style.marginTop = valueText * 1.0 + "px";
   } else {
-    text.style.marginTop = value * 1.5 + "px";
+    text.style.marginTop = valueText * 1.5 + "px";
   }
-  ship.style.left = value * 0.5 + "px";
+  // ship.style.left = value * 0.5 + "px";
+});
+
+//Fix Ship Stop Text scroll over page 1000px
+
+window.addEventListener("scroll", function () {
+  const valueShip = window.scrollY;
+
+  if (valueShip < 1000) {
+    ship.style.left = valueShip * 0.5 + "px";
+  } else {
+    ship.style.left = valueShip * 0.1 + "px";
+  }
 });
 // Animation Text + Ship End
 
