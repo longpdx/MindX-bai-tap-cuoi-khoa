@@ -5,7 +5,7 @@ const ship = document.getElementById("ship");
 window.addEventListener("scroll", function () {
   const valueText = window.scrollY;
 
-  //Fix Text Stop Text scroll over page 1000px
+//Fix Text Stop Text scroll over page 1000px
   if (valueText > 1000) {
     text.style.marginTop = valueText * 1.0 + "px";
   } else {
@@ -15,7 +15,6 @@ window.addEventListener("scroll", function () {
 });
 
 //Fix Ship Stop Text scroll over page 1000px
-
 window.addEventListener("scroll", function () {
   const valueShip = window.scrollY;
 
