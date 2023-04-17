@@ -1,45 +1,26 @@
 const body = document.body;
-
 const toggleBtn = document.getElementById('toggle');
+
 toggleBtn.onclick = function(){
   toggleBtn.classList.toggle('active');
   body.classList.toggle('active');
 }
 
-// Change Parallax background color
-const parallaxElement = document.querySelector('.parallax');
-const parallaxTextElement = document.querySelector('.parallax #text');
-const waveElement = document.querySelector('.wave-animation');
-const starsElement = document.querySelector('#stars');
-// const consonantsElement = document.querySelector('.consonants');
-let isColored = false;
-let originalColor;
-
-toggleBtn.addEventListener('click', () => {
-if (isColored) {
-  parallaxElement.style.background = originalColor;
-  parallaxTextElement.style.color = originalColor;
-  waveElement.style.background = originalColor;
-  // starsElement.style.background= originalColor;
-  // consonantsElement.style.background = originalColor;
-
-  isColored = false;
-} else {
-  originalColor = parallaxElement.style.background;
-  originalColor = parallaxTextElement.style.color;
-  originalColor = waveElement.style.background;
-  // originalColor = starsElement.style.background;
-  // originalColor = consonantsElement.style.background;
-
-  parallaxElement.style.background = '#3c2970'; // Thay đổi màu nền thành màu tím
-  parallaxTextElement.style.color = 'white'; // Thay đổi màu Text thành màu trắng
-  waveElement.style.background = '#17041b'; // Thay đổi màu Wave thành màu đỏ
-  // starsElement.style.background; // Thay đổi màu sắc thành màu đỏ
-  // consonantsElement.style.background = '#2b1055'; // Thay đổi màu sắc thành màu đỏ
-  isColored = true;
-}
+toggleBtn.addEventListener("click", function() {
+  let lightStyle = document.getElementById("light-style");
+  let darkStyle = document.getElementById("dark-style");
+  let mode = document.getElementById("mode");
+  
+  if (darkStyle.disabled) {
+    lightStyle.disabled = true;
+    darkStyle.disabled = false;
+    mode.textContent = "Dark";
+  } else {
+    lightStyle.disabled = false;
+    darkStyle.disabled = true;
+    mode.textContent = "Light";
+  }
 });
-// Change Parallax background color End
 
 // Change icon
 const themeButton = document.getElementById('theme-button');
@@ -56,6 +37,4 @@ themeButton.addEventListener('click', () => {
     isDarkMode = true;
   }
 });
-
 // Change icon End
-

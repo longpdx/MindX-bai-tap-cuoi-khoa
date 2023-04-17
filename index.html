@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ship vs Sheep</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="dictionary.css" />
+    <link rel="stylesheet" href="style.css" id="light-style" />
+    <link rel="stylesheet" href="darkmode.css" id="dark-style" disabled/>
+    <!-- <link rel="stylesheet" href="dictionary.css" /> -->
     <link rel="stylesheet" href="mediaQueries.css" />
     <link
       rel="stylesheet"
@@ -15,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="./animate/sheep.png" type="image/png" />
+    <link rel="icon" href="./animate/favicon.png" type="image/png" />
   </head>
   <body>
     <div class="container-box">
@@ -24,6 +25,7 @@
         <h2 class="intro">Interactive Phonemic Chart</h2>
         <div id="toggle">
           <i id="theme-button" class="fa-solid fa-toggle-off"></i>
+          <p id="mode">Light</p>
         </div>
       </div>
       <!-- Top bar End -->
